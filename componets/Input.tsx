@@ -3,11 +3,12 @@ import { StyleSheet, TextInput } from "react-native";
 interface InputProps {
     value?: string;
     placeholder: string;
+    secure?: boolean; 
 }
 
-const Input = ({value, placeholder}: InputProps) => {
+const Input = ({value, placeholder, secure}: InputProps) => {
     return (
-        <TextInput style={styles.input} returnKeyType={"next"} placeholder={placeholder} placeholderTextColor={'#ffbb6e'} >
+        <TextInput style={styles.input} returnKeyType={"next"} placeholder={placeholder} placeholderTextColor={'#ffbb6e'} secureTextEntry={secure} >
             {value}
         </TextInput>
     );

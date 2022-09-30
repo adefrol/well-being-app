@@ -19,8 +19,12 @@ const App = () => {
                             <Text style={styles.auth}>
                                 Авторизация
                             </Text>
-                            <Input value='adefrolx@gmail.com' placeholder='E-mail' />
-                            <Input value='12345' placeholder='Пароль' />
+                            <Input value='adefrolx@gmail.com'
+                                placeholder='E-mail' />
+                            <Input value='12345'
+                                placeholder='Пароль'
+                                secure={true} />
+
                             <RegPassBtn value='Забыли пароль?'
                                 marginTop={10} />
                             <TouchableOpacity style={styles.enter}>
