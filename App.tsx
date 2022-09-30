@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import Input from './componets/Input';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.main}>
+        <Text style={styles.auth}>
+          Авторизация
+        </Text>
+        <Input></Input>
+      </View>
     </View>
   );
 }
@@ -13,8 +18,28 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    flexDirection:'column',
+    backgroundColor: '#000',
     justifyContent: 'center',
+  },
+
+  main: {
+    height: '50%',
+    width: '100%',
+    backgroundColor: '#fff',
+    alignSelf:'flex-end',
+    position: 'absolute',
+    bottom:0,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+
+  },
+
+  auth:{
+    textAlign:'center',
+    fontWeight:'800',
+    fontSize: 25,
+    marginTop: 15,
+    color:'#ff941a',
   },
 });
