@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         color: '#ff941a',
         width: '80%',
         height: 40,
-        marginTop: '10%',
+        marginTop: 30,
         textAlign: 'center',
     },
 });
